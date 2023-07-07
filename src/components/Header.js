@@ -1,22 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css'; // Import the CSS file for Header styles
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul className="menu">
+          <li className="menu-item">
+            <Link to="/" className="menu-link">Home</Link>
           </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
+          <li className="menu-item">
+            <Link to="/blogs" className="menu-link">Blogs</Link>
           </li>
-          <li>
-            <Link to="/login">Login</Link>
+          <li className="menu-item">
+            <Link to="/login" className="menu-link">Login</Link>
           </li>
-          <li>
-            <Link to="/register">Register</Link>
+          <li className="menu-item">
+            <Link to="/register" className="menu-link">Register</Link>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,28 @@
+.header {
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-right: 10px;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+  
