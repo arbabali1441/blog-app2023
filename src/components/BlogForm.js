@@ -1,42 +1,45 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function BlogForm() {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
-  
-    const handleTitleChange = (e) => {
-      setTitle(e.target.value);
-    };
-  
-    const handleContentChange = (e) => {
-      setContent(e.target.value);
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Handle form submission
-      // You can save the title and content values or send them to a server
-    };
-  
-    return (
-      <div>
-        <h2>Create a New Blog Post</h2>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Title:
-            <input type="text" value={title} onChange={handleTitleChange} />
-          </label>
-          <br />
-          <label>
-            Content:
-            <textarea value={content} onChange={handleContentChange} />
-          </label>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    );
-  }
-  
-  export default BlogForm;
-  
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your form submission logic here
+    // For example, save the blog post
+
+    // After successful submission, navigate to the blog list
+    navigate('/');
+  };
+
+  return (
+    <div>
+      <h2>Create New Blog</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="content">Content:</label>
+          <textarea
+            id="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+        </div>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+  );
+}
+
+export default BlogForm;
