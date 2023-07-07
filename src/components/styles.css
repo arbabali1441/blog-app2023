@@ -1,7 +1,6 @@
 /* styles.css */
 
 /* Header Styles */
-
 .header-container {
   display: flex;
   align-items: center;
@@ -13,10 +12,10 @@
 
 .logo-container {
   text-decoration: none;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    text-transform: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  text-transform: none;
 }
 
 .logo-name {
@@ -72,9 +71,7 @@
   background-color: white;
 }
 
-
 /* BlogList Styles */
-
 .blog-list-container {
   background-color: #f5f5f5;
   padding: 20px;
@@ -101,7 +98,56 @@
   background-color: #d22f5b;
 }
 
+/* Login Style */
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-panel h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login-panel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-panel input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.login-panel button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-panel button:hover {
+  background-color: #0056b3;
+}
+
 /* Additional Styles */
-
 /* Add any additional styles here */
-

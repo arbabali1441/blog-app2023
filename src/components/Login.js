@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './styles.css'; // Import the styles.css file
 
-function Register() {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -8,7 +9,7 @@ function Register() {
     e.preventDefault();
 
     // Here, you can implement the logic for handling form submission
-    // and making the API request for user registration
+    // and making the API request for login
 
     // Reset the form fields
     setEmail('');
@@ -16,8 +17,8 @@ function Register() {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
+    <div className="login-container"> {/* Add className here */}
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email:</label>
@@ -37,10 +38,10 @@ function Register() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 }
 
-export default Register;
+export default Login;
