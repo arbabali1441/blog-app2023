@@ -1,10 +1,13 @@
 import React from 'react';
-import './styles.css';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 function Header() {
   return (
     <header className="header-container">
+      <div className="logo-container">
+        <h1 className="logo-name">arbab-blog</h1>
+      </div>
       <nav>
         <ul className="menu">
           <li className="menu-item">

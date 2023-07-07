@@ -13,10 +13,10 @@
 
 .logo-container {
   text-decoration: none;
-    color: yellows;
+    color: white;
     font-weight: bold;
     position: relative;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .logo-name {
