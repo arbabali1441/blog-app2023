@@ -1,12 +1,13 @@
 import React from 'react';
+import MyComponent from './MyComponent';
 
-function MyComponent() {
+function App() {
   return (
     <div>
-      <h2>My Component</h2>
-      <p>This is my custom component.</p>
+      <h1>Welcome to My App</h1>
+      <MyComponent />
     </div>
   );
 }
 
-export default MyComponent;
+export default App;

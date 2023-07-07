@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 function BlogList() {
-  useEffect(() => {
-    // Add your side effect code here
-    // For example, fetching blog posts
-  }, []);
-
   return (
-    <div>
-      <h2>Blog List</h2>
-      {/* Render your blog posts */}
-      <Link to="/create">Create New Blog</Link>
+    <div className="blog-list-container">
+      <h2 className="blog-list-title">Blog List</h2>
+      <Link to="/create" className="create-blog-link">
+        Create New Blog
+      </Link>
     </div>
   );
 }

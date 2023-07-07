@@ -1,3 +1,7 @@
+/* styles.css */
+
+/* Header Styles */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -8,17 +12,33 @@
 }
 
 .logo-container {
-  flex-grow: 1;
+  text-decoration: none;
+    color: yellows;
+    font-weight: bold;
+    position: relative;
+    text-transform: capitalize;
 }
 
 .logo-name {
   margin: 0;
+  position: relative;
+}
+
+.logo-name::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: auto;
+  height: 2px;
+  background-color: white;
 }
 
 .menu {
-  list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +52,7 @@
   color: white;
   font-weight: bold;
   position: relative;
+  text-transform: capitalize;
 }
 
 .menu-link::before {
@@ -50,3 +71,37 @@
   transform: scaleX(1);
   background-color: white;
 }
+
+
+/* BlogList Styles */
+
+.blog-list-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.blog-list-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.create-blog-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1356d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.create-blog-link:hover {
+  background-color: #d22f5b;
+}
+
+/* Additional Styles */
+
+/* Add any additional styles here */
+
